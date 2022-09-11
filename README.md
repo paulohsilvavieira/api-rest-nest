@@ -75,14 +75,8 @@ $ npm run migration:revert
 
 ## Database Entity
 ```bash
-# Create migration
-$ npm run migration:create --name=CreateTableUser
-
-# Run migrations
-$ npm run migration:run
-
-# Revert migrations
-$ npm run migration:revert
+# Create Entity
+$ npm run entity:create --name=CreateTableUser
 
 ```
 
