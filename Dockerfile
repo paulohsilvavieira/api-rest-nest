@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.15
+FROM node:16.17-alpine3.15
 
 RUN npm install -g npm
 WORKDIR /usr/src/app
