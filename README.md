@@ -32,9 +32,39 @@
 $ npm install
 ```
 
+# Set Values to .env (if dont use docker to run app)
+```bash
+# copy .env.default and rename the copy to .env
+$ cp .env.default .env
+
+# change values inside .env
+REDIS=
+NODE_ENV=
+PG_HOST=
+PG_PORT=
+PG_USERNAME=
+PG_PASSWORD=
+SECRET_JWT=
+
+```
+
 ## Running the app
 
 ```bash
+# copy .env.default and rename the copy to .env
+$ cp .env.default .env
+
+# change values inside .env
+
+REDIS=
+NODE_ENV=
+PG_HOST=
+PG_PORT=
+PG_USERNAME=
+PG_PASSWORD=
+SECRET_JWT=
+
+
 # development
 $ npm run start
 
@@ -43,6 +73,17 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+## Running the app with docker
+
+```bash
+# build images
+$ docker-compose build
+
+# after build images run docker app
+$ docker-compose up -d
+
 ```
 
 ## Test
@@ -76,7 +117,7 @@ $ npm run migration:revert
 ## Database Entity
 ```bash
 # Create Entity
-$ npm run entity:create --name=CreateTableUser
+$ npm run entity:create --name=User
 
 ```
 
