@@ -7,5 +7,7 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN npm config set cache /tmp --global
+
 COPY . .
 

@@ -16,6 +16,7 @@ services:
       - REDIS=api_redis_nest
       - NODE_ENV=develop
       - PG_HOST=api_database_nest
+      - PG_DATABASE=api-basic-app
       - PG_PORT=5432
       - PG_USERNAME=root
       - PG_PASSWORD=admin

@@ -7,7 +7,7 @@ export default {
     username: process.env.PG_USERNAME,
     password: process.env.PG_PASSWORD,
     database: process.env.PG_DATABASE,
-    entities: path.join(__dirname, './entities/index.{ts,js}'),
-    migrations: path.join(__dirname, './migrations/*.{ts,js}'),
+    entities: path.join(__dirname, '/../**/*.entity.{js,ts}'),
+    migrations: path.join(__dirname, '../database/migrations/*.{ts,js}'),
   },
 };
