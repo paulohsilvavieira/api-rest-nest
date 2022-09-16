@@ -5,6 +5,7 @@ services:
     container_name: api_nest
     build:
       context: .
+      dockerfile: dockerfiles/Dockerfile
     volumes:
       - .:/usr/src/app
       - node_modules:/usr/src/app/node_modules
@@ -28,7 +29,7 @@ services:
     container_name: api_redis_nest
     image: redis:alpine3.16
     ports:
-      - 6380:6379
+      - 16380:6379
   api_database_nest:
     image: postgres:alpine3.16
     container_name: api_database_nest
@@ -39,7 +40,7 @@ services:
       - ${HOME}/docker/postgresql/api_database_nest:/var/lib/postgresql:z
       - ./docker-bootstrap/init-database.sh:/docker-entrypoint-initdb.d/init-database.sh
     ports:
-      - "5434:5432"
+      - "15432:5432"
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready" ]
       interval: 10s

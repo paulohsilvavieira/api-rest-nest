@@ -5,11 +5,11 @@ import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({
-      isGlobal: true,
-    }),
-    DatabaseModule,
-    UsersModule,
+    // ConfigModule.forRoot({
+    //   isGlobal: true,
+    // }),
+    // DatabaseModule,
+    // UsersModule,
   ],
   controllers: [],
   providers: [],

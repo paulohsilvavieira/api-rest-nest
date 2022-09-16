@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "kubernetes://schema/v1%40service": "file:///Users/paulohsilvavieira/Developer/study/api-basic-app/kubernetes/deployment.yaml"
+  }
+}
